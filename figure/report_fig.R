@@ -20,7 +20,6 @@ gcomb <- ggplot(fullcomb) +
 	geom_point(aes(parvalue, value, col=key), shape=".", alpha=0.5) +
 	geom_smooth(aes(parvalue, value, col=key), method="lm", se=FALSE) +
 	scale_x_log10() +
-	scale_y_log10() +
 	geom_hline(yintercept=1, lty=2) +
 	facet_wrap(~parname,scale="free_x", nrow=1) +
 	theme(

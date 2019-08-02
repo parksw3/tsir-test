@@ -2,8 +2,8 @@ ntrial <- 200
 nsim <- 10
 
 pars_range <- data.frame(
-	min=c(25, 100000, 10, 0.1, 0.3, 0.9),
-	max=c(35, 5e6, 1000, 10, 0.7, 1),
+	min=c(20, 100000, 50, 0.1, 0.3, 0.8),
+	max=c(40, 5e6, 1000, 10, 0.7, 1),
 	row.names=c("betamean", "N", "theta", "i", "rho", "alpha"))
 
 ltab <- as.data.frame(apply(pars_range,1,
